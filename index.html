@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restow — Packing Checklist</title>
+  <meta name="description" content="Free AI packing lists for every trip. No subscription, no ads, no account. Your lists never leave your iPhone and your own iCloud.">
+  <style>
+    :root {
+      --bg: #FFFDF8;
+      --text: #211D16;
+      --muted: #6B6558;
+      --accent: #7C5CD6;
+      --success: #4D8F6E;
+      --card: #FFFFFF;
+      --border: rgba(33, 29, 22, 0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171B2A;
+        --text: #EEF1F6;
+        --muted: #9AA1B5;
+        --accent: #8B69E6;
+        --card: #1F2436;
+        --border: rgba(238, 241, 246, 0.14);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 56px 24px 40px; }
+    .icon {
+      width: 96px; height: 96px; border-radius: 22px;
+      display: block; margin-bottom: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    }
+    h1 { font-size: 2rem; letter-spacing: -0.02em; margin-bottom: 4px; }
+    .tagline { color: var(--muted); font-size: 1.05rem; margin-bottom: 28px; }
+    .pitch {
+      font-size: 1.15rem; font-weight: 600; line-height: 1.55;
+      border-left: 4px solid var(--accent);
+      padding-left: 16px; margin-bottom: 32px;
+    }
+    .pitch .ai { color: var(--accent); }
+    ul.features { list-style: none; margin-bottom: 36px; }
+    ul.features li {
+      padding: 10px 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: 12px; align-items: baseline;
+    }
+    ul.features li:last-child { border-bottom: none; }
+    ul.features .check { color: var(--success); font-weight: 700; }
+    .badge {
+      display: inline-block; background: var(--text); color: var(--bg);
+      padding: 12px 22px; border-radius: 12px; text-decoration: none;
+      font-weight: 600; margin-bottom: 8px;
+    }
+    .badge-note { display: block; color: var(--muted); font-size: 0.85rem; margin-bottom: 40px; }
+    .screenshot {
+      max-width: 100%; border-radius: 18px; border: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+    .story {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px 20px; margin-bottom: 40px;
+      color: var(--muted); font-size: 0.95rem;
+    }
+    footer {
+      border-top: 1px solid var(--border); padding-top: 20px;
+      color: var(--muted); font-size: 0.9rem;
+      display: flex; gap: 18px; flex-wrap: wrap;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<main>
+  <!-- TODO: export the real app icon to site/icon.png (1024px master → 192px is fine) -->
+  <img class="icon" src="icon.png" alt="Restow app icon">
+
+  <h1>Restow</h1>
+  <p class="tagline">The packing checklist that learns what you forget.</p>
+
+  <p class="pitch">
+    Free. No subscription. No ads. No account. Your packing lists never leave
+    your iPhone and your own iCloud — and <span class="ai">the AI that fills
+    them runs on your phone</span>.
+  </p>
+
+  <ul class="features">
+    <li><span class="check">✓</span> Tell it your trip — AI drafts the list on-device, in seconds</li>
+    <li><span class="check">✓</span> Pack mode with a progress ring: pack, check, go</li>
+    <li><span class="check">✓</span> It learns what you always forget and suggests it next time</li>
+    <li><span class="check">✓</span> Return repack so nothing gets left in the hotel room</li>
+    <li><span class="check">✓</span> Reminder the evening before you leave</li>
+    <li><span class="check">✓</span> Syncs through your own private iCloud — we can't see your data</li>
+  </ul>
+
+  <!-- TODO: swap href for the real App Store link once the app is live -->
+  <a class="badge" href="#">Download on the App Store</a>
+  <span class="badge-note">Coming soon — currently in review.</span>
+
+  <!-- TODO: add one real screenshot as site/screenshot.png (list editor with a real trip) -->
+  <img class="screenshot" src="screenshot.png" alt="Restow list editor showing a packed trip checklist">
+
+  <div class="story">
+    Restow is built by Jacob, a 14-year-old indie developer, as a first solo app.
+    It's completely free — the AI runs on your phone, so it costs nothing to run.
+    Feedback is genuinely wanted: <a href="support.html" style="color: var(--accent);">tell me what's wrong with it</a>.
+  </div>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="support.html">Support</a>
+    <span>© 2026 Restow</span>
+  </footer>
+</main>
+</body>
+</html>
